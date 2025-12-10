@@ -1,0 +1,142 @@
+
+/* =======================global=========================== */
+:root{
+  --main-color: #2C3E50;
+  --sub-color:#1ABC9C;
+  --footer-color:#1A252F;
+}
+
+.my-80{
+margin-top: 80px;
+}
+
+.p-10{
+  padding: 10px;
+}
+
+
+.p-40{
+  padding: 40px;
+}
+
+img{
+  display: block;
+}
+
+.page{
+  margin-top: 74px;
+  min-height: 85vh;
+}
+
+.line{
+  height: 4px;
+  width: 80px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+
+
+/* =======================Navbar=========================== */
+
+.navbar{
+  background-color: var(--main-color);
+   transition: all 0.5s ease;
+}
+
+.nav-link.active{
+  background-color: var(--sub-color);
+  border-radius: 8px;
+}
+
+.nav-item{
+  width: fit-content;
+}
+
+
+
+/* =======================Home=========================== */
+
+
+.home {
+  background-color: #1ABC9C;
+  min-height: inherit;
+}
+
+.home .img-wrapper img{
+  width: 250px;
+  display: block;
+}
+
+/* =======================Portfolio=========================== */
+
+
+.portfolio , .notFound{
+  min-height: inherit;
+}
+
+.portfolio .line {
+  background-color: var(--main-color);
+}
+
+.portfolio .icon-wrapper i , .portfolio h2 {
+  color: var(--main-color);
+}
+
+.portfolio .layer{
+  background-color: rgba(26, 188, 156,.8);
+  opacity: 0;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.portfolio .img-wrapper:hover .layer{
+  opacity: 1;
+}
+
+#lightBoxContainer{
+  z-index: 1500;
+  background-color: rgba(13, 110, 253, .25);
+}
+
+/* =======================Contact=========================== */
+
+form label{
+  color: var(--sub-color);
+  position: relative;
+  top: -42px;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+form input:not(:placeholder-shown) + label {
+  top: -80px;
+  opacity: 1;
+}
+
+form button{
+  background-color: var(--sub-color);
+  color: #fff;
+}
+
+
+
+/* =======================Footer=========================== */
+
+
+.footer{
+  background-color: var(--main-color);
+}
+
+.footer-end{
+  background-color: var(--footer-color);
+}
+
+.footer .icon-wrapper{
+  width: 38px;
+  height: 38px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
